@@ -10,12 +10,14 @@
 
   <!-- Favicons
   <link href="assets/img/favicon.png" rel="icon">-->
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!--<link href="assets/img/cslogo.png" rel="apple-touch-icon">-->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,11 +36,41 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Custom Scaffold</h1>
-      </a>
+      <!-- Logo and Name Block -->
+
+<!-- Logo and Name Block -->
+<a href="index.html" class="logo d-flex align-items-center gap-2">
+  <img src="assets/img/cslogo-removebg-preview.png" alt="Custom Scaffold Logo" class="logo-img" style="height: 2000px;">
+  <h1 class="sitename m-0" style="font-weight: 500; font-size: 1.4rem; font-family: 'Poppins', sans-serif;">
+    <span style="font-family: 'Roboto Mono', monospace;">Custom Scaffold</span>
+  </h1>
+</a>
+
+
+
+
+<!-- Inline styles -->
+<style>
+  .logo-img {
+    height: 90px;
+    object-fit: contain;
+  }
+
+  .logo.d-flex {
+    text-decoration: none;
+  }
+
+  .sitename {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e63946; /* Adjust color if needed */
+  }
+
+  .sitename:hover {
+    color: #b91c1c;
+  }
+</style>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -46,7 +78,8 @@
           
           <li><a href="#why-us">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-      
+          <li><a href="#about">About</a></li>
+
           <li><a href="#team">Team</a></li>
           
           <li><a href="#contact">Contact</a></li>
@@ -62,13 +95,14 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/sf.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/Frame Scaffold/dcedf63b-6fb5-45b6-9844-f779d5f5bcd0.jpeg" alt="" data-aos="fade-in">
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Custom Scaffold </h2>
-            <p>Strength. Safety. Support.</p>
+            <h1 style="font-size: 4rem; font-weight: 800; color: #ffffff;">Custom Scaffold</h1>
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #f1f1f1;">Trusted And Reliable Scaffolding Rental.</h2>
+         
             <a href="#contact" class="btn-get-started">Get a Free Estimate</a>
           </div>
         </div>
@@ -81,193 +115,495 @@
     </section><!-- /Clients Section -->
 
     <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
+ <!-- Services Section with Icons -->
+<!-- Services Section with Icons -->
+<section id="why-us" class="why-us section" style="background-color: #ebe7e7; padding: 60px 0;">
+  <div class="container">
 
-      <div class="container">
+    <span class="description-title" style="display: block; text-align: center; font-size: 34px; color: #e63946; font-weight: 600;">Services</span>
+    <p style="text-align: center; font-size: 22px; color: #1d3557;">We provide a wide range of scaffold solutions designed to meet the needs of construction sites, commercial projects, and industrial facilities.</p>
+    <br>
 
-        <div class="row no-gutters">
-          
-          <span class="description-title" style="display: block; text-align: center; font-size: 34px; color: #e63946; font-weight: 600;">Services</span>
-          <p style="text-align: center; font-size: 22px; color: #1d3557;">We provide a wide range of scaffold solutions designed to meet the needs of construction sites, commercial projects, and industrial facilities.</p>
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
-            <span style="color: #e63946;">01</span>
-            <h4>Frame scaffolding</h4>
-            <p>is one of the most commonly used scaffold systems in the construction industry. Known for its strength, simplicity, and ease of setup, frame scaffold is ideal for projects that require fast and reliable access.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
-            <span style="color: #e63946;"> 02</span>
-            <h4>Ringlock scaffolding</h4>
-            <p>  is a strong, modular system ideal for complex and heavy-duty projects. Its rosette-style connection allows fast assembly, flexible angles, and high load capacity—making it perfect for industrial, infrastructure, and high-rise jobs.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
-            <span style="color: #e63946;">03</span>
-            <h4>Trash chutes</h4>
-            <p>are a vital solution for efficient and safe debris removal on multi-story construction sites.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span style="color: #e63946;">04</span>
-            <h4>Stair towers</h4>
-            <p>provide safe and efficient access for workers and materials across multiple levels of a construction site.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span style="color: #e63946;">05</span>
-            <h4>Pedestrian canopies</h4>
-            <p>are temporary protective structures installed along sidewalks to shield the public from falling debris during construction, renovation, or demolition.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
-            <span style="color: #e63946;">06</span>
-            <h4>Shrink wrap</h4>
-            <p>is a durable, weather-resistant covering used to fully enclose scaffolding structures, creating a sealed environment that protects the site from wind, rain, dust, and debris.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="700">
-            <span style="color: #e63946;">07</span>
-            <h4>Platforms</h4>
-            <p>are stable working surfaces that provide a safe and secure area for workers to operate on scaffolds at various heights. We offer custom platform solutions to meet every project's needs.</p>
-          </div><!-- End Card Item -->
-          
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="800">
-            <span style="color: #e63946;">08</span>
-            <h4>Shoring</h4>
-            <p>is a temporary support system used to stabilize structures during construction, renovation, or excavation. It provides critical reinforcement to prevent collapse when load-bearing elements are removed or altered. </p>
-          </div><!-- End Card Item -->
-          
+    <style>
+      .service-icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: brightness(0); /* ensures black appearance */
+      }
 
-        </div>
+      @media (max-width: 768px) {
+        .service-icon {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .card {
+        background: #f4f4f4;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 35px;
+        text-align: center;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        border: 1px solid #dee2e6;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-color: #e63946;
+      }
+
+      .card h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        color: #1d3557;
+      }
+
+      .card p {
+        text-align: center;
+        font-size: 1rem;
+        color: #333;
+      }
+
+      .card-number {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #e63946;
+      }
+    </style>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-number">01</div>
+        <img src="assets/img/frameicon.png" alt="Frame Scaffolding Icon" class="service-icon">
+        <h4>Frame scaffolding</h4>
+        <p>Known for its strength and simplicity, ideal for fast and reliable access.</p>
       </div>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-number">02</div>
+        <img src="assets/img/icon-2.png" alt="Ringlock Icon" class="service-icon">
+        <h4>Ringlock scaffolding</h4>
+        <p>Modular system with high load capacity and flexible setup for heavy-duty projects.</p>
       </div>
 
-    </section><!-- /Why Us Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-      <img src="assets/img/sca-9.jpg" alt="Scaffolding project">
-    
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3 style="font-weight: 700; color: #fff;">Get Reliable Scaffolding Solutions Today</h3>
-              <p style="font-weight: 600; color: #d4cdcd;">
-                Need fast, safe, and dependable scaffolding services? Our team is ready to assist you with planning, delivery, and expert setup for any size project. From residential to large-scale commercial jobs — we've got you covered.
-              </p>
-              <a class="cta-btn" href="#contact" style="font-weight: bold;">Request a Free Quote</a>
-            </div>
-          </div>
-        </div>
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-number">03</div>
+        <img src="assets/img/chute.png" alt="Trash Chutes Icon" class="service-icon">
+        <h4>Trash chutes</h4>
+        <p>Vital for safe and efficient debris removal on multi-story projects.</p>
       </div>
-    </section>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-number">04</div>
+        <img src="assets/img/stair.png" alt="Stair Towers Icon" class="service-icon">
+        <h4>Stair towers</h4>
+        <p>Ensure safe access across multiple levels of a site.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-number">05</div>
+        <img src="assets/img/icon-5.png" alt="Pedestrian Canopy Icon" class="service-icon">
+        <h4>Pedestrian canopies</h4>
+        <p>Protect pedestrians from overhead hazards during construction.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-number">06</div>
+        <img src="assets/img/icon-6.png" alt="Shrink Wrap Icon" class="service-icon">
+        <h4>Shrink wrap</h4>
+        <p>Seals scaffolding against wind, rain, dust, and debris.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="700">
+        <div class="card-number">07</div>
+        <img src="assets/img/icon-7.png" alt="Platform Icon" class="service-icon">
+        <h4>Platforms</h4>
+        <p>Secure work surfaces for safe operation at height.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="800">
+        <div class="card-number">08</div>
+        <img src="assets/img/icon-8.png" alt="Shoring Icon" class="service-icon">
+        <h4>Shoring</h4>
+        <p>Supports structures during renovation, excavation, or removal of load-bearing walls.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Partnerships and Compliance Section -->
+
+
+
+<!-- Partnerships and Compliance Section -->
+<!-- Partnerships and Compliance Section -->
+<section class="partnerships-section with-border">
+  <div class="overlay"></div>
+  <div class="container content">
+    <h2>Proud Partnerships and Compliance</h2>
+    <p>
+      At Custom Scaffolding, we take pride in our strong partnerships and commitment to safety.
+      We are a proud member of the NorCal Carpenters Union and maintain full compliance with OSHA standards.
+      Additionally, we are partnered with the United Brotherhood of Carpenters, ensuring top-quality
+      craftsmanship and industry-leading standards in all our projects.
+    </p>
+
+    <!-- Logos -->
+    <div class="logos">
+      <img src="assets/img/norcal-removebg-preview.png" alt="NorCal Carpenters Union">
+      <img src="assets/img/uc-logo4-removebg-preview.png" alt="United Brotherhood of Carpenters">
+      <img src="assets/img/wlogo-2-removebg-preview.png" alt="wstc">
+      <img src="assets/img/osha-removebg-preview.png" alt="OSHA">
+     
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+.partnerships-section {
+  position: relative;
+  padding: 100px 20px;
+  color: #0c0c0c;
+  text-align: center;
+  background-color: #e7bebe;
+}
+
+.partnerships-section.with-border {
+  border: 3px solid #8e0813;
+  border-radius: 12px;
+  margin: 40px 20px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.05);
+}
+
+.partnerships-section .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(137, 177, 241, 0.95);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.partnerships-section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partnerships-section h2 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.partnerships-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.partnerships-section .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.partnerships-section .logos img {
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partnerships-section .logos img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .partnerships-section h2 {
+    font-size: 2rem;
+  }
+
+  .partnerships-section p {
+    font-size: 1rem;
+  }
+
+  .partnerships-section .logos img {
+    height: 60px;
+  }
+}
+</style>
+
+
+
+
+
+
     <!-- /Call To Action Section -->
 
     
 
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
-
-  <!-- Section Style for Square Images -->
-  <style>
-    .portfolio-content img {
-      width: 100%;
-      height: 300px; /* Adjust height for square dimensions */
-      object-fit: cover;
-      object-position: center;
-      border-radius: 8px; /* Optional: for rounded edges */
-    }
-  </style>
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <span class="description-title">Portfolio</span>
-    <h2>Our Work</h2>
-    <p>Explore some of the scaffold systems and safety structures we've installed on recent projects.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-frame">Frame Scaffolding</li>
-        <li data-filter=".filter-ringlock">Ringlock Systems</li>
-        <li data-filter=".filter-access">Stair Towers & Platforms</li>
-        <li data-filter=".filter-protection">Canopies & Shrinkwrap</li>
-        <li data-filter=".filter-disposal">Trash Chutes & Shoring</li>
-      </ul>
-
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/System Scaffold/IMG_5414.jpeg" class="img-fluid" alt="Frame Scaffolding">
-            <div class="portfolio-info">
-              <h4>Frame Scaffold Setup</h4>
-              <p>Quick-assembly frames for mid-rise buildings.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+    
+      <!-- Section Style for Square Images -->
+      <style>
+        .portfolio-content img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 8px;
+        }
+      </style>
+    
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Portfolio</span>
+        <h2>Our Work</h2>
+        <p>Explore some of the scaffold systems and safety structures we've installed on recent projects.</p>
+      </div>
+    
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-frame">Frame Scaffolding</li>
+            <!--<li data-filter=".filter-ringlock">Ringlock Systems</li>-->
+            <li data-filter=".filter-access">Stair Towers & Platforms</li>
+            <li data-filter=".filter-protection">Canopies & Shrinkwrap</li>
+            <li data-filter=".filter-disposal">Trash Chutes & Shoring</li>
+          </ul>
+    
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+    
+            <!-- Frame Scaffolding (6 total) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/80525734-f8ae-4812-931e-fca82fb8976a.jpeg" class="img-fluid" alt="Frame Scaffolding">
+                <div class="portfolio-info">
+                  <h4>Frame Scaffold </h4>
+                  <!--<p>Quick-assembly frames for mid-rise buildings.</p>-->
+                </div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ringlock">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/Platforms/16457.jpeg" class="img-fluid" alt="Ringlock System">
-            <div class="portfolio-info">
-              <h4>Ringlock Scaffold System</h4>
-              <p>Modular, high-load support for complex structures.</p>
+            <!-- Additional 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/2461dfd2-1ccf-4a61-8a56-7ed03debbc0c.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Frame Scaffold </h4></div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/Stair Towers/f5ff8a7a-5566-406d-b131-64eea53ae9f2.jpeg" class="img-fluid" alt="Stair Tower">
-            <div class="portfolio-info">
-              <h4>Stair Tower Access</h4>
-              <p>Safe vertical access across job sites.</p>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/f514d2c9-ad46-4032-9882-6e829be72f39.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Frame Scaffold </h4></div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/Shrink wrap & Netting/6cbf536b-5463-4504-8786-6b27f6d004a4.jpeg" class="img-fluid" alt="Shrinkwrap Enclosure">
-            <div class="portfolio-info">
-              <h4>Shrinkwrap Enclosure</h4>
-              <p>Weather-resistant containment for active zones.</p>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/ddaeaefb-9baa-436d-9f57-0626acf8ea80.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Frame Scaffold </h4></div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/Trash Chutes & Shoring/IMG_2238.jpeg" class="img-fluid" alt="Trash Chute">
-            <div class="portfolio-info">
-              <h4>Trash Chute Install</h4>
-              <p>Efficient debris disposal from high levels.</p>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/IMG-20200915-WA0009.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Frame Scaffold </h4></div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/Trash Chutes & Shoring/30577242-0a65-4f18-9863-0d8a2cf7368c.jpeg" class="img-fluid" alt="Shoring System">
-            <div class="portfolio-info">
-              <h4>Shoring System</h4>
-              <p>Temporary support for safe construction.</p>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frame">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Frame Scaffold/IMG_3526.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Frame Scaffold </h4></div>
+              </div>
             </div>
-          </div>
-        </div><!-- End Portfolio Item -->
+    
+           
+    
+            <!-- Stair Towers & Platforms (6 total) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Stair Towers/stair.jpeg" class="img-fluid" alt="Stair Tower">
+                <div class="portfolio-info">
+                  <h4>Stair Tower & Platforms</h4>
+                  <!--<p>Safe vertical access across job sites.</p>-->
+                </div>
+              </div>
+            </div>
+            <!-- Additional 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Stair Towers/IMG_7711.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Stair Tower & Platforms</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Stair Towers/d71f9789-2bab-41f0-a918-69a75e49778f.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Stair Tower & Platforms</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Platforms/16316.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Stair Tower & Platforms</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Platforms/16457.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Stair Tower & Platforms</h4><!--<p>Example description</p>--></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-access">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Platforms/16463.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Stair Tower & Platforms</h4><!--<p>Example description</p>--></div>
+              </div>
+            </div>
+    
+            <!-- Canopies & Shrinkwrap (6 total) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Shrink wrap & Netting/6cbf536b-5463-4504-8786-6b27f6d004a4.jpeg" class="img-fluid" alt="Shrinkwrap Enclosure">
+                <div class="portfolio-info">
+                  <h4>Canopies & Shrinkwrap</h4>
+                  <!--<p>Weather-resistant containment for active zones.</p>-->
+                </div>
+              </div>
+            </div>
+            <!-- Additional 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Pedestrian Canopy/16579f7a-de8d-4238-9f9a-bde08113318b.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Canopies & Shrinkwrap</h4><!--<p>Example description</p>--></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Pedestrian Canopy/85e98d12-a285-4d66-9845-3f27f1361798.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Canopies & Shrinkwrap</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Pedestrian Canopy/5e840379-abc4-49d1-9db6-18bd5c52b7ad.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Canopies & Shrinkwrap</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Shrink wrap & Netting/16300.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Canopies & Shrinkwrap</h4></div>
+              </div>
+            </div>
 
-      </div><!-- End Portfolio Container -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-protection">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Shrink wrap & Netting/IMG_9577.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Canopies & Shrinkwrap</h4></div>
+              </div>
+            </div>
+    
+            <!-- Trash Chutes & Shoring (6 total) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/IMG_2238.jpeg" class="img-fluid" alt="Trash Chute">
+                <div class="portfolio-info">
+                  <h4>Trash Chutes & Shoring</h4>
+                  <!--<p>Efficient debris disposal from high levels.</p>-->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/26a2525a-4b49-4ba9-9f6f-46268e8b5906.jpeg" class="img-fluid" alt="Shoring System">
+                <div class="portfolio-info">
+                  <h4>Trash Chutes & Shoring</h4>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- Additional 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/16216.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Trash Chutes & Shoring</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/30577242-0a65-4f18-9863-0d8a2cf7368c.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Trash Chutes & Shoring</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/cfe3741e-3634-4fe7-9dfb-38aba702f8f8.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Trash Chutes & Shoring</h4></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-disposal">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/Trash Chutes & Shoring/IMG_4041.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info"><h4>Trash Chutes & Shoring</h4></div>
+              </div>
+            </div>
+    
+          </div><!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section><!-- /Portfolio Section -->
+   
+    
+  
+  
 
+<!-- About Section -->
+<section id="about" class="about section" style="position: relative; padding: 100px 0; background: url('assets/img/Frame Scaffold/80525734-f8ae-4812-931e-fca82fb8976a.jpeg') center center / cover no-repeat;">
+  <!-- Blur Overlay -->
+  <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(1px); z-index: 1;"></div>
+
+  <div class="container" style="position: relative; z-index: 2;" data-aos="fade-up">
+    <div class="text-center">
+      
+
+      <!-- Title -->
+      <span class="description-title" style="font-size: 46px; color: #ffffff; font-weight: bold;">About Us</span>
+  
+
+      <!-- Paragraph -->
+      <p style="max-width: 850px; margin: 30px auto 0; font-size: 1.6rem; color: #f0f0f0; line-height: 1.8; font-weight: 500;">
+        At Custom Scaffold, we build more than just platforms—we build trust. Our team delivers reliable, union-certified scaffolding services across California and Nevada. 
+        Whether it's frame, ringlock, stair towers, or shrinkwrap solutions, we’re committed to safety, precision, and professional excellence in every project.
+      </p>
     </div>
   </div>
-</section><!-- /Portfolio Section -->
+</section>
+
 
 
 
@@ -293,162 +629,388 @@
     <div style="flex: 1 1 300px; background: #fff; padding: 20px; text-align: center; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
       <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Carlos Velasco</p>
       <p style="margin: 0; color: #555;">CEO / President</p>
-      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4084266547" style="color: #333;">(408) 426-6547</a><br>✉️ <a href="mailto:carlos@customscaffolding.com" style="color: #333;">carlos@customscaffolding.com</a></p>
+      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4084266547" style="color: #333;">(408) 426-6547</a><br></p>
     </div>
     <div style="flex: 1 1 300px; background: #fff; padding: 20px; text-align: center; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
       <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Carlos N Velasco</p>
       <p style="margin: 0; color: #555;">Estimator / Project Manager</p>
-      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4083400005" style="color: #333;">(408) 340-0005</a><br>✉️ <a href="mailto:carlosnathan@gmail.com" style="color: #333;">carlosnathan@gmail.com</a></p>
+      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4083400005" style="color: #333;">(408) 340-0005</a><br></a></p>
     </div>
 
     <div style="flex: 1 1 300px; background: #fff; padding: 20px; text-align: center; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
       <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Anita Lopez</p>
       <p style="margin: 0; color: #555;">Office Manager</p>
-      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4084726712" style="color: #333;">(408) 934-9805</a><br>✉️ <a href="mailto:anita@customscaffolding.com" style="color: #333;">anita@customscaffolding.com</a></p>
+      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4084726712" style="color: #333;">(408) 934-9855</a><br>></p>
     </div>
 
     <div style="flex: 1 1 300px; background: #fff; padding: 20px; text-align: center; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
       <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Alfonso Quintero</p>
       <p style="margin: 0; color: #555;">Superintendent</p>
-      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:6696007059" style="color: #333;">(669) 600-7059</a><br>✉️ <a href="mailto:alfonso@customscaffolding.com" style="color: #333;">alfonso@customscaffolding.com</a></p>
+      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:6696007059" style="color: #333;">(669) 600-7059</a><br></a></p>
     </div>
 
     <div style="width: 325px; background: #fff; padding: 20px; text-align: center; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
       <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Douglas Noches</p>
       <p style="margin: 0; color: #555;">Safety Coordinator</p>
-      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4086630749" style="color: #333;">(408) 663-0749</a><br>✉️ <a href="mailto:douglas@customscaffolding.com" style="color: #333;">douglas@customscaffolding.com</a></p>
+      <p style="margin: 8px 0; font-size: 14px;">📞 <a href="tel:4086630749" style="color: #333;">(408) 663-0749</a><br></p>
     </div>
     
+  </section>
+      
 
-   
+
+  
 
 
-  </div>
-</section>
+
 
     
 
           
 
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
 
     
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Contact Section -->
+<section id="contact" class="contact section" style="background-color: #f6f6f6; padding: 60px 0;">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up" >
-        <span class="description-title">Contact</span>
-        <h2>Contact</h2>
-        <p>Tell us about your project or how we can help you...</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <span class="description-title">Contact</span>
+    <h2>Contact</h2>
+    <p>Tell us about your project or how we can help you...</p>
+  </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"  style="color: #e63946;" ></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>1341 Archer St suite D, Alviso, CA 95002</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4" >
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0" style="color: #e63946;"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>(408) 934-9855</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"   style="color: #e63946;"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>customscaffold@gmail.com</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
+    <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-geo-alt flex-shrink-0" style="color: #e63946;"></i>
+            <div>
+              <h3>Address</h3>
+              <p>1341 Archer St suite D, Alviso, CA 95002</p>
+            </div>
           </div>
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+        <div class="col-lg-4">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-telephone flex-shrink-0" style="color: #e63946;"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>(408) 934-9855</p>
             </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
           </div>
-        </form><!-- End Contact Form -->
+        </div>
+
+        <div class="col-lg-4">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-envelope flex-shrink-0" style="color: #e63946;"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>info@customscaffolding.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Style for form -->
+    <style>
+      .php-email-form input,
+      .php-email-form textarea {
+        background-color: #fff;
+        color: #222;
+        border: 5.5px solid #0f0f0f;
+        border-radius: 5px;
+        padding: 12px 15px;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      .php-email-form input::placeholder,
+      .php-email-form textarea::placeholder {
+        color: #1b1a1a;
+      }
+
+      .php-email-form input:focus,
+      .php-email-form textarea:focus {
+        border-color: #e63946;
+        outline: none;
+        box-shadow: 0 0 0 5px rgba(18, 18, 18, 0.15);
+      }
+
+      .php-email-form button[type="submit"] {
+        background-color: #e63946;
+        color: #f1e8e8;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .php-email-form button[type="submit"]:hover {
+        background-color: #c02f3c;
+      }
+    </style>
+
+    <form action="https://formsubmit.co/iqgreennursery@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="col-md-6">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="col-md-12">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="col-md-12">
+          <textarea name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://studiodesignms.shop/thank-you.html">
+
+        <div class="col-md-12 text-center">
+          <button type="submit">Send Message</button>
+        </div>
 
       </div>
+    </form>
 
-    </section><!-- /Contact Section -->
-
+  </div>
+</section>
   </main>
 
-  <footer id="footer" class="footer dark-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Custom Scaffold</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>1341 Archer St suite D</p>
-            <p>Alviso, CA 95002</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>(408)934-9855</span></p>
-            <p><strong>Email:</strong> <span>customscaffold@gmail.com</span></p>
+
+<!-- FOOTER -->
+<footer id="footer" class="footer white-footer">
+  <div class="container footer-top">
+    <div class="row gy-4 align-items-start">
+
+      <!-- Contact Info -->
+      <div class="col-lg-6 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center gap-3">
+          <img src="assets/img/cslogo-removebg-preview.png" alt="Custom Scaffold Logo" style="height: 60px; object-fit: contain;">
+          <span class="sitename" style="font-size: 2.5rem; font-weight: 700;">Custom Scaffold</span>
+        </a>
+
+        <div class="footer-contact pt-3">
+          <p>1341 Archer St suite D</p>
+          <p>Alviso, CA 95002</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>(408)934-9855</span></p>
+          <p><strong>Email:</strong> <span>info@customscaffolding.com</span></p>
+          <p>
+            California License No: 973532<br>
+            Nevada License No: 0093881
+          </p>
+        </div>
+      </div>
+
+      <!-- Logos Block -->
+      <div class="col-lg-6 col-md-12 pt-3 pt-lg-0 d-flex flex-column justify-content-between align-items-lg-end align-items-center">
+        <div class="footer-logos-grid text-center text-lg-end">
+          <div class="row gx-4 gy-4">
+            <div class="col-6">
+              <img src="assets/img/wlogo-2-removebg-preview.png" alt="Logo 4" class="footer-license-logo">
+            </div>
+            <div class="col-6">
+              <img src="assets/img/uc-logo4-removebg-preview.png" alt="Logo 3" class="footer-license-logo">
+            </div>
+            <div class="col-6">
+              <img src="assets/img/norcal-removebg-preview.png" alt="Logo 2" class="footer-license-logo">
+            </div>
+            <div class="col-6">
+              <img src="assets/img/osha-removebg-preview.png" alt="Logo 1" class="footer-license-logo">
+            </div>
           </div>
-       
+        </div>
       </div>
+
     </div>
+  </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span></span> <strong class="px-1 sitename">Custom Scaffold</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-      
+  <!-- Copyright -->
+  <div class="container text-center mt-4">
+    <p style="font-size: 1.1rem; font-weight: 400;">©All Rights Reserved</p>
+  </div>
+</footer>
 
-      </div>
-    </div>
+<style>
+  /* Footer background and main color */
+  .white-footer {
+    background-color: rgba(137, 177, 241, 0.95);
+    color: #040404;
+  }
 
-  </footer>
+  /* Footer brand and contact text */
+  .white-footer .sitename,
+  .white-footer .footer-contact p,
+  .white-footer .footer-contact span {
+    color: #0a0a0a;
+  }
+
+  /* General logo styling */
+  .footer-logo {
+    height: 195px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-logo:hover {
+    transform: scale(1.05);
+  }
+
+  /* Footer logo layout */
+  .footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (min-width: 992px) {
+    .footer-logos {
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .footer-about,
+    .footer-logos {
+      justify-content: center !important;
+      text-align: center;
+    }
+
+    .footer-logos {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    .footer-logo {
+      max-height: 70px;
+      margin: 0 auto;
+    }
+
+    .footer-about .logo {
+      justify-content: center !important;
+      text-align: center;
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  /* Footer contact info */
+  .footer-contact p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0d0d0d;
+    margin-bottom: 10px;
+  }
+
+  /* Logos below address block (2x2 grid) */
+  .footer-license-logo {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+  }
+
+  .footer-license-logo:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 576px) {
+    .footer-license-logo {
+      max-width: 90px;
+    }
+
+    /* ✅ Hide the logo image only on small screens */
+    .footer-about .logo img {
+      display: none;
+    }
+
+    /* ✅ Center the "Custom Scaffold" text only */
+    .footer-about .sitename {
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    /* ✅ Justify the contact info paragraphs only */
+    .footer-contact p {
+      text-align: justify;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* License text color + layout */
+  .license-info p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #0d0c0c;
+  }
+
+  /* Grid layout container for license logos */
+  .footer-logos-grid .row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (min-width: 992px) {
+    .footer-logos-grid {
+      max-width: 300px;
+    }
+
+    .license-info {
+      margin-top: 20px;
+    }
+  }
+
+
+  @media (min-width: 577px) and (max-width: 991px) {
+    /* ✅ Hide the logo image */
+    .footer-about .logo img {
+      display: none;
+    }
+  
+    /* ✅ Justify and enlarge the contact text */
+    .footer-contact p {
+      text-align: justify;
+      font-size: 1.7rem;
+    }
+  
+    /* ✅ Center the "Custom Scaffold" title */
+    .footer-about .sitename {
+      text-align: center;
+      display: block;
+      width: 100%;
+      font-size: 2.2rem;
+    }
+  }
+  
+</style>
+
+
+
+
+
+
+
+  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -458,13 +1020,15 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+<!-- Make sure to include Bootstrap JS -->
+<!-- Make sure to include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 

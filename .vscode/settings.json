@@ -8,6 +8,10 @@
     "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
     "debug.saveBeforeStart": "none",
     "cSpell.words": [
-        "Ringlock"
+        "Alviso",
+        "Noches",
+        "Ringlock",
+        "sitename",
+        "wstc"
     ]
 }

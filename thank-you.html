@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You - Custom Scaffold</title>
+  <link rel="stylesheet" href="assets/css/main.css"> <!-- Optional: link your site styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      color: #28a745;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #d0273d;
+    }
+
+    /* Logo styling */
+    .thank-you-logos {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .thank-you-logos img {
+      height: 90px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .thank-you-logos img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 576px) {
+      .thank-you-logos img {
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank You!</h1>
+  <p>Your message has been successfully sent. We’ll get back to you as soon as possible.</p>
+
+  <a href="index.html">Back to Home</a>
+
+  <!-- Logos -->
+  <div class="thank-you-logos">
+    <img src="assets/img/cslogo.png" alt="Logo 1" class="footer-logo">
+          <img src="assets/img/norcal-2.png" alt="Logo 2" class="footer-logo">
+          <img src="assets/img/uc-logo.jpg" alt="Logo 3" class="footer-logo">
+          <img src="assets/img/wlogo-2-removebg-preview.png" alt="Logo 4" class="footer-license-logo">
+  </div>
+
+</body>
+</html>
